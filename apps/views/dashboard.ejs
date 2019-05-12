@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+
+    <%- include layout/head %>
+
+</head>
+<body>
+
+<div class="container">
+    <%- include layout/nav.ejs %>
+    <div class="row" style="margin-bottom: 10px;">
+        <a href="/book" class="btn btn-success pull-right"> Add Book </a>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Books
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Book Name</th>
+                        <th>Book Author</th>
+                        <th>Create Time</th>
+                        <th>Update Time</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <% if(data && data.books) {%>
+                        <% for(var i = 0; i < data.books.length; i++) {%>
+                            <tr>
+                                <td><%= data.books[i].bookid %></td>
+                                <td><%= data.books[i].bookname %></td>
+                                <td><%= data.books[i].bookauthor %></td>
+                                <td><%= data.books[i].created_at %></td>
+                                <td><%= data.books[i].updated_at %></td>
+                                <td>
+                                    <a href="/book/edit/<%= data.books[i].bookid %>" class="btn btn-primary">Edit</a>
+                                    <button href="" class="btn btn-danger book_delete" book_id = "<%= data.books[i].bookid%>">Delete</button>
+                                </td>
+                            </tr>
+                        <%}%>
+                    <%}%>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.table-responsive -->
+        </div>
+        <!-- /.panel-body -->
+    </div>
+</div>
+<script type="text/javascript" src = "/static/javascripts/book.js"></script>
+</body>
+</html>

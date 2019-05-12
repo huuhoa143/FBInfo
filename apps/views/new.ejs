@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+
+    <%- include layout/head.ejs %>
+</head>
+<body>
+<div class="container">
+    <%- include layout/nav.ejs %>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Add new Book
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <%if (data && data.error) {%>
+                        <div id="post-alert" class="alert alert-danger col-sm-12">
+                            <%= data.error%>
+                        </div>
+                    <%}%>
+
+                    <form role="form" method="POST" action="/book">
+                        <div class="form-group">
+                            <label>Book ID</label>
+                            <input class="form-control" name="bookid" placeholder="Book ID">
+                        </div>
+                        <div class="form-group">
+                            <label>Book Name</label>
+                            <input class="form-control" name="bookname" placeholder="Book Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Book Author</label>
+                            <input class="form-control" name="bookauthor" placeholder="Book Author">
+                        </div>
+
+                        <input type="submit" name="" value="Add" class="btn btn-success">
+                    </form>
+                </div>
+                <!-- /.col-lg-6 (nested) -->
+            </div>
+            <!-- /.row (nested) -->
+        </div>
+        <!-- /.panel-body -->
+    </div>
+</div>
+</body>
+</html>

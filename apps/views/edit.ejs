@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookStore</title>
+
+    <%- include layout/head.ejs %>
+</head>
+<body>
+<div class="container">
+    <%- include layout/nav.ejs %>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Edit Book
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <%if (data && data.error) {%>
+                        <div id="post-alert" class="alert alert-danger col-sm-12">
+                            <%= data.error%>
+                        </div>
+                    <%}%>
+
+                    <form role="form" method="" action="">
+                        <div>
+                            <input class="id" type="hidden" name="id" value="<%if (data && data.books){%><%= data.books.id%><%}%>">
+                        </div>
+                        <div class="form-group">
+                            <label>Book ID</label>
+                            <input class="form-control bookid" name="bookid" value="<%if (data && data.books){%><%= data.books.bookid%><%}%>">
+                        </div>
+                        <div class="form-group">
+                            <label>Book Name</label>
+                            <input class="form-control bookname" name="bookname" value="<%if (data && data.books){%><%= data.books.bookname%><%}%>">
+                        </div>
+                        <div class="form-group">
+                            <label>Book Author</label>
+                            <input class="form-control bookauthor" name="bookauthor" value="<%if (data && data.books){%><%= data.books.bookauthor%><%}%>">
+                        </div>
+
+                        <input type="button" name="" value="Edit" class="btn btn-success book_edit">
+                    </form>
+                </div>
+                <!-- /.col-lg-6 (nested) -->
+            </div>
+            <!-- /.row (nested) -->
+        </div>
+        <!-- /.panel-body -->
+    </div>
+</div>
+<script type="text/javascript" src = "/static/javascripts/book.js"></script>
+</body>
+</html>

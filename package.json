@@ -1,0 +1,23 @@
+{
+  "name": "bookstore",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "ejs": "^2.6.1",
+    "event-stream": "^4.0.1",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "glob": "^7.1.4",
+    "mongoose": "^5.5.7",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.19.0",
+    "q": "^1.5.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
