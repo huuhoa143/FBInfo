@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="507e2eb7-0b29-4534-acbe-f958dfa56c3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/models/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/apps/models/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc.json" beforeDir="false" afterPath="$PROJECT_DIR$/abc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/models/user_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/models/user_info.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/models/user_info.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="197">
+              <caret line="92" column="54" lean-forward="true" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -29,22 +29,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/models/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="-10">
+              <caret line="2050" column="27" selection-start-line="2050" selection-start-column="27" selection-end-line="2050" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/abc.json">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11">
+              <caret line="1957" lean-forward="true" selection-start-line="1957" selection-end-line="1957" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/models/UIDInfo.models.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -83,6 +87,7 @@
       <find>0964720579</find>
       <find>0964720138</find>
       <find>100008777265394</find>
+      <find>infoJSON</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,8 +123,8 @@
         <option value="$PROJECT_DIR$/abc.txt" />
         <option value="$PROJECT_DIR$/apps/models/test.models.js" />
         <option value="$PROJECT_DIR$/apps/models/test.txt" />
-        <option value="$PROJECT_DIR$/abc.json" />
         <option value="$PROJECT_DIR$/apps/models/user_info.js" />
+        <option value="$PROJECT_DIR$/abc.json" />
       </list>
     </option>
   </component>
@@ -181,6 +186,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Node.js.user_info.js">
+    <configuration name="user_info.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/apps/models/user_info.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.user_info.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -207,23 +222,25 @@
       <workItem from="1557717451833" duration="249000" />
       <workItem from="1557717806611" duration="620000" />
       <workItem from="1557763550158" duration="19518000" />
-      <workItem from="1557811081969" duration="271000" />
+      <workItem from="1557811081969" duration="524000" />
+      <workItem from="1557830831143" duration="479000" />
+      <workItem from="1557843499601" duration="1937000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72954000" />
+    <option name="totallyTimeSpent" value="75623000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23943663" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13615024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32868218" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32921174" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.89302325" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -231,7 +248,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.81860465" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.36744186" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -385,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/services/get-uids.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/database/database.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -411,13 +421,10 @@
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/models/test.models.js" />
-    <entry file="file://$PROJECT_DIR$/abc.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/models/UIDInfo.models.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -442,17 +449,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/models/test.txt">
+    <entry file="file://$PROJECT_DIR$/apps/services/get-uids.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="465">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/models/user_info.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="197">
+          <caret line="92" column="54" lean-forward="true" selection-start-line="92" selection-start-column="54" selection-end-line="92" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/models/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="2050" column="27" selection-start-line="2050" selection-start-column="27" selection-end-line="2050" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="1957" lean-forward="true" selection-start-line="1957" selection-end-line="1957" />
         </state>
       </provider>
     </entry>

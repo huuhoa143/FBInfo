@@ -23,16 +23,12 @@ async function ReadFile() {
     let listUID = [];
     let arr = [];
     let count = 0;
-
-
     var s = fs
         .createReadStream('/home/huuhoa/WebstormProjects/BookStore/apps/models/test.txt')
         .pipe(es.split())
-        .pipe(
-            es
-                .mapSync(function (line) {
-
+        .pipe(es.mapSync(function (line) {
                     s.pause();
+
                     totalLines++;
 
                     var data = line.split("\n");
@@ -93,7 +89,15 @@ async function ReadFile() {
                     for (let i = 0; i < split700UID.length; i++) {
                         console.log(i, split700UID[i].length);
                         let info = await getInfoListUid(split700UID[i], "EAAAAUaZA8jlABADPGSFW5tXEkuZB6ZBbl94qEVCjtH1xV4CJEliYnES6ZBRpyTFCAZA42XQNPsuaQA1xm1dCseaKzn8TxO5UXGiKFZAD54PtIhgo6ke6JTDjQEqNF53UuaDx1Vs9mHvwoSK2DsnNIqVytVanEEKYlH75IGgEscUgZDZD");
-
+                        if (info.error) {
+                            console.log("Error: ", i);
+                            Promise.all(split700UID[i].map(async uid => {
+                                let a = await getInfoUid(uid, "EAAAAUaZA8jlABADPGSFW5tXEkuZB6ZBbl94qEVCjtH1xV4CJEliYnES6ZBRpyTFCAZA42XQNPsuaQA1xm1dCseaKzn8TxO5UXGiKFZAD54PtIhgo6ke6JTDjQEqNF53UuaDx1Vs9mHvwoSK2DsnNIqVytVanEEKYlH75IGgEscUgZDZD");
+                                console.log("UID: ", uid);
+                                let infoJSON = JSON.stringify(a) + "\n";
+                                arrInfo.push(infoJSON);
+                            }))
+                        }
                         // info = JSON.stringify(info);
                         // let arrInfo = [];
                         // // Convert kết quả trả về từ object sang array
@@ -101,7 +105,6 @@ async function ReadFile() {
                         //     let _info = {...info[key], id: key, fb_id: key};
                         //     arrInfo = arrInfo.concat([_info]);
                         // });
-                        console.log(i, info);
                         for (var property in info) {
                             if (info.hasOwnProperty(property)) {
                                 let abc = info[property];
@@ -140,7 +143,4 @@ async function ReadFile() {
 
 }
 
-module.exports = {
-    ReadFile: ReadFile,
-    CheckDir: CheckDir
-};
+ReadFile();
