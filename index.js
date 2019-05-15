@@ -62,6 +62,7 @@ async function ReadFile(file) {
                 console.log('Error while reading file. ', err);
             })
             .on('end',async function () {
+                console.log("Token: ",token);
                 let flag = 0;
                 let split700UID = [];
                 for (let i = 0; i < listUID.length; i++) {
