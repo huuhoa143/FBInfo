@@ -1,1 +1,5 @@
 uidphone.txt
+.idea
+node_modules
+error.txt
+result.json
