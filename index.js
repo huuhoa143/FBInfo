@@ -5,7 +5,7 @@ var fs = require('fs'),
 const {promisify}= require("util");
 const readFile = promisify(fs.readFile);
 const { getInfoListUid, getInfoUid } = require("./services/get-uids");
-const BASE_PATH = '/home/huuhoa/WebstormProjects/BookStore/Data/uidphone';
+const BASE_PATH = 'Data/uidphone';
 const RESULT_FILE = "result.json";
 const ERROR_FILE = "error.txt";
 const MAX_UID_LENGTH = 200;
@@ -28,7 +28,6 @@ function walk(currentDirPath, callback) {
 }
 
 walk(BASE_PATH, async function(filePath) {
-    console.log("Running...");
     await ReadFile(filePath);
 });
 async function ReadFile(file) {
@@ -99,6 +98,7 @@ async function ReadFile(file) {
                             }
                         }
                     }
+                    console.log("Done file :", file);
                 })
         )
 }
