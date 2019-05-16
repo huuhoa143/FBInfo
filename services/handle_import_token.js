@@ -22,7 +22,6 @@ const handleImportFile = path => {
   });
 };
 const saveToDb = async list_tokens => {
-  const mongoose = require("mongoose");
   const FbAccessToken = require("../models/fb_access_token");
   const { getInfo } = require("../services/get-info");
   try {

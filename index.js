@@ -26,6 +26,7 @@ function walk(currentDirPath, callback) {
   });
 }
 async function ReadFile(file) {
+  console.log("Read file", file);
   let totalLines = 0;
   let listUID = [];
   const s = fs
@@ -115,5 +116,6 @@ db.connect("mongodb://127.0.0.1:27017/datagrin").then(async msg => {
   console.log(msg);
   walk(BASE_PATH, async function(filePath) {
     await ReadFile(filePath);
+    console.log(filePath);
   });
 });
