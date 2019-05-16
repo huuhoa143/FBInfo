@@ -73,7 +73,7 @@ async function ReadFile(file) {
             // Get token để chạy
             let token = await getToken();
             console.log("Running with token: ", token);
-            if (token === "") {
+            if (!token) {
               console.log("File ", file, " đang chạy! ");
               return;
             }
