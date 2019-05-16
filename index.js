@@ -26,7 +26,6 @@ function walk(currentDirPath, callback) {
   });
 }
 async function ReadFile(file) {
-  console.log("Read file", file);
   let totalLines = 0;
   let listUID = [];
   const s = fs
@@ -53,6 +52,7 @@ async function ReadFile(file) {
           console.log("Error while reading file. ", err);
         })
         .on("end", async function() {
+          console.log("Running in file");
           let flag = 0;
           let split700UID = [];
           for (let i = 0; i < listUID.length; i++) {
@@ -116,6 +116,5 @@ db.connect("mongodb://127.0.0.1:27017/datagrin").then(async msg => {
   console.log(msg);
   walk(BASE_PATH, async function(filePath) {
     await ReadFile(filePath);
-    console.log(filePath);
   });
 });
